@@ -29,7 +29,7 @@ namespace InterfaceCSharp2
                 Console.Write("Enter price per day : ");
                 double pricePerDay = Double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-                RentalService rentalService = new RentalService(pricePerHour, pricePerDay);
+                RentalService rentalService = new RentalService(pricePerHour, pricePerDay,new BrazilTaxSevice());
                 rentalService.ProcessingInvoice(carRental);
                 
                 Console.WriteLine("INVOICE : ");

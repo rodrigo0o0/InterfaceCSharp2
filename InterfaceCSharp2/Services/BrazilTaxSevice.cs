@@ -1,6 +1,6 @@
 ﻿namespace InterfaceCSharp2.Services
 {
-    internal class BrazilTaxSevice
+    internal class BrazilTaxSevice : ITaxService
     {
         public double Tax(double amount)
         {
