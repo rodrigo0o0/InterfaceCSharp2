@@ -1,0 +1,8 @@
+C:\Users\sande\source\repos\InterfaceCSharp2\InterfaceCSharp2\bin\Debug\InterfaceCSharp2.exe.config
+C:\Users\sande\source\repos\InterfaceCSharp2\InterfaceCSharp2\bin\Debug\InterfaceCSharp2.exe
+C:\Users\sande\source\repos\InterfaceCSharp2\InterfaceCSharp2\bin\Debug\InterfaceCSharp2.pdb
+C:\Users\sande\source\repos\InterfaceCSharp2\InterfaceCSharp2\obj\Debug\InterfaceCSharp2.csproj.AssemblyReference.cache
+C:\Users\sande\source\repos\InterfaceCSharp2\InterfaceCSharp2\obj\Debug\InterfaceCSharp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\sande\source\repos\InterfaceCSharp2\InterfaceCSharp2\obj\Debug\InterfaceCSharp2.csproj.CoreCompileInputs.cache
+C:\Users\sande\source\repos\InterfaceCSharp2\InterfaceCSharp2\obj\Debug\InterfaceCSharp2.exe
+C:\Users\sande\source\repos\InterfaceCSharp2\InterfaceCSharp2\obj\Debug\InterfaceCSharp2.pdb

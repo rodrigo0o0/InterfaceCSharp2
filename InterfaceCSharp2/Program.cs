@@ -1,4 +1,6 @@
-﻿using System;
+﻿using InterfaceCSharp2.Entities;
+using InterfaceCSharp2.Services;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -20,15 +22,19 @@ namespace InterfaceCSharp2
                 DateTime pickupCar = DateTime.Parse(Console.ReadLine());
                 Console.Write("Return (dd//MM/yyyy hh:mm): ");
                 DateTime returnCar = DateTime.Parse(Console.ReadLine());
+
+                CarRental carRental = new CarRental(new Vehicle(carModel),pickupCar,returnCar);
                 Console.Write("Enter price per hour : ");
                 double pricePerHour = Double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 Console.Write("Enter price per day : ");
                 double pricePerDay = Double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                Rental rental = new Rental(carModel, pickupCar, returnCar, pricePerHour, pricePerDay);
+
+                RentalService rentalService = new RentalService(pricePerHour, pricePerDay);
+                rentalService.ProcessingInvoice(carRental);
+                
                 Console.WriteLine("INVOICE : ");
-                Console.WriteLine("Basic Payment : " + rental.BasicPayment().ToString("F2", CultureInfo.InvariantCulture));
-                Console.WriteLine("Tax : " + rental.TaxesCalculate().ToString("F2", CultureInfo.InvariantCulture));
-                Console.WriteLine("Total Payment : " + rental.TotalPayment().ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine(carRental.Invoice);
+                Console.WriteLine();
 
 
                 Console.ReadKey();
